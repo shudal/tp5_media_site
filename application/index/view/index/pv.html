@@ -1,0 +1,15 @@
+{include file="../application/common/view/header.html"}
+<ul class="pages">
+  {for start="0" end="$size/5"}
+  <li><a href="{:url("index/index/pv",['start'=>$i*5])}">{$i+1}</a></li>
+  {/for}
+</ul>
+<br>
+<div class="vs">
+{foreach $list as $l}
+<div class="v">
+  {$l}<br>
+  <video src="{:url("/static/pv/$l")}" witdth="400" height="200" preload="none" controls="controls"></video>
+</div>
+{/foreach}
+</div>
