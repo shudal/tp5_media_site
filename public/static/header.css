@@ -1,0 +1,32 @@
+.header_menu > li{
+  float:left;
+  list-style-type:none;
+}
+.header_menu >li > a{
+  text-decoration : none;
+  font-size :32;
+  color :black;
+  padding :7px;
+}
+.header_menu > li > a:hover{
+  background-color :  #BBFFFF;
+}
+#header_menu{
+  margin : 7px ;
+  padding :7px ;
+}
+.pages > li{
+  list-style-type:none;
+  float:left;
+  padding:1px;
+}
+.vs{
+  padding:5px;
+}
+.v{
+  padding:7px;
+}
+body{
+  margin:1;
+  font-family:"楷体";
+}
