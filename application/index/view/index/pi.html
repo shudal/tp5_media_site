@@ -1,0 +1,22 @@
+{include file="../application/common/view/header.html"}
+<br>
+
+
+<ul class="pages">
+  <li><a
+    href="{:url("index/index/pi",['class'=>$class,'start'=>$now_i-5])}"><<</a></li>
+  {for start="0" end="$size/5"}
+  <li><a href="{:url("index/index/pi",['class'=>$class,'start'=>$i*5])}">{$i+1}</a></li>
+  {/for}
+  <li><a
+    href="{:url("index/index/pi",['class'=>$class,'start'=>$now_i+5])}">>></a></li>
+</ul>
+<br>
+<div class="pics">
+{foreach $list as $l}
+<div class="pic">
+  {$l}<br>
+  <img src="{:url("/static/pc/$class/$l")}" witdth="400"></img>
+</div>
+{/foreach}
+</div>
